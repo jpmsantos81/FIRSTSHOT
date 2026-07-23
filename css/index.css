@@ -1,6 +1,6 @@
 body {
     color: white;
-    background-color: #232323;
+    background-color: #181818;
 }
 header {
     text-align: center;
@@ -9,14 +9,14 @@ header {
     padding: 0.2em 0;
 
     top: 0;
-    transition: background-color .3s ease;
-    background-color: #191818;
+    transition: 0.3s ease;
+    background: linear-gradient(180deg, rgb(71, 15, 16) 0%, rgba(0, 0, 0, 1) 100%);
 
     z-index: 1000;
 }
 .scrolled {
     backdrop-filter: blur(2px);
-    background-color: #0000007b;
+    background: linear-gradient(180deg, rgb(71, 15, 16,0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 header .container {
     display: flex;

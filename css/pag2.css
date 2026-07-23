@@ -1,3 +1,40 @@
+body {
+    color: white;
+    background: #181818;
+    
+}
+header {
+    text-align: center;
+    position:sticky;
+    width: 100%;
+    padding: 0.2em 0;
+    
+    top: 0;
+    transition: 0.3s ease;
+    background: #280F47;
+    background: linear-gradient(180deg, rgb(71, 15, 16) 0%, rgba(0, 0, 0, 1) 100%);
+
+    z-index: 1000;
+}
+.scrolled {
+    backdrop-filter: blur(2px);
+    background: linear-gradient(180deg, rgb(71, 15, 16,0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    left: 0px;
+    width: 20%;
+    height: auto;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+}
 .card img {
     height: 2em;
 }

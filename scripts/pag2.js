@@ -1,9 +1,11 @@
+carregar();
+
 //usa a api do valorant e coloca na tela
 async function carregar() {
     const json = await fetch("https://valorant-api.com/v1/agents?language=pt-BR&isPlayableCharacter=true");
     const personagens = (await json.json()).data;
 
-console.log(personagens);
+    console.log(personagens);
 
     const lista = document.getElementById("lista");
 
