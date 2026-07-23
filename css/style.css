@@ -11,8 +11,7 @@
     left: 0px;
 }
 .banner {
-    background: no-repeat center center/cover;
-    background-color: black;
+    background: black no-repeat center center/cover;
     height: 40vh;
     display: flex;
     align-items: center;
