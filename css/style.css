@@ -12,6 +12,7 @@
 }
 .banner {
     background: no-repeat center center/cover;
+    background-color: black;
     height: 40vh;
     display: flex;
     align-items: center;
