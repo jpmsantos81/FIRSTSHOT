@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Valorant";
-    src: url("/fontes/ValorantFont.ttf") format("truetype");
+    src: url("../fontes/ValorantFont.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Tungstain";
-    src: url("/fontes/Tungsten-Bold_Web.woff2");
+    src: url("../fontes/Tungsten-Bold_Web.woff2");
     font-weight: bold;
 }
 .valorant{
