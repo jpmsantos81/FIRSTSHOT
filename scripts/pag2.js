@@ -88,7 +88,7 @@ function mostrarAgente(agente) {
     window.scrollAutomatico = true;
     const header = document.querySelector("header");
     const infos = document.querySelector("#infosDoAgente");
-
+    header.classList.remove('scrolled');
     const y = infos.getBoundingClientRect().top + window.pageYOffset - header.offsetHeight;
     window.scrollTo({
         behavior: 'smooth',
