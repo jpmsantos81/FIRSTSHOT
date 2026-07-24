@@ -1,40 +1,291 @@
+@font-face {
+    font-family: "Valorant";
+    src: url("/fontes/ValorantFont.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Tungstain";
+    src: url("/fontes/Tungsten-Bold_Web.woff2");
+    font-weight: bold;
+}
+.valorant{
+    font-family: "Valorant";
+}
+.tungstain{
+    font-family: "Tungstain";
+}
+.titulo {
+    font-family: "Tungstain";
+    font-size: 5em;
+    color: #fae9a6;
+    margin: 0.1em;
+}
+.oculto{
+    display: none;
+}
 body {
     color: white;
     background: #181818;
-    
 }
+
 header {
-    text-align: center;
-    position:sticky;
+    position: sticky;
+    top: 0;
     width: 100%;
     padding: 0.2em 0;
-    
-    top: 0;
     transition: 0.3s ease;
-    background: #280F47;
-    background: linear-gradient(180deg, rgb(71, 15, 16) 0%, rgba(0, 0, 0, 1) 100%);
-
+    background: linear-gradient(180deg, rgb(71, 15, 16) 0%, rgb(0, 0, 0) 100%);
     z-index: 1000;
 }
-.scrolled {
-    backdrop-filter: blur(2px);
-    background: linear-gradient(180deg, rgb(71, 15, 16,0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
-}
-header .container {
+
+header>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
-.logo {
-    left: 0px;
-    width: 20%;
-    height: auto;
+
+header figure {
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
-.logo img {
+
+.scrolled {
+    backdrop-filter: blur(2px);
+    background: linear-gradient(180deg, rgb(71, 15, 16, 0.5) 0%, rgb(0, 0, 0, 0.5) 100%);
+}
+
+#logoValorant img {
+    width: 25%;
+    margin: 0 auto;
+}
+section{
+    scroll-margin-top: 8.32em;
+}
+#personagens{
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+#agentes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+#agentes .card {
+    cursor: pointer;
+    border-radius: 1em;
+    text-align: center;
+    transition: transform .2s ease, box-shadow .2s ease;
+
+    overflow: hidden;
+}
+
+#agentes .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgb(0 0 0 / .2);
+}
+
+#agentes .card:active {
+    transform: scale(0.98);
+    box-shadow: 0 6px 8px rgb(0 0 0 / .15);
+}
+
+#agentes figure {
+    aspect-ratio: 3/2.5;
+    margin: 0 auto;
+    padding: 2em;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#agentes .card h3 {
+    width: 100%;
+    color: white;
+    font: 1em "Valorant";
+    background: #2826263e;
+    backdrop-filter: blur(2px);
+    padding-top: 0.2em;
+}
+
+#agentes .card h3 span {
+    background: #fcfcfc;
+    background: linear-gradient(180deg, #ffffff, #f0f0f0, #bfbfbf, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+footer {
+    font-weight: 400;
+    background-color: rgb(0, 0, 0);
+    padding: 2vmax;
+    font-weight: 300;
+    text-align: center;
+    bottom: 0px;
     width: 100%;
     height: auto;
+    margin: 0px;
+    font: 1em "Oswald", sans-serif;
 }
-.card img {
-    height: 2em;
+.agenteSelecionado {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.agenteSelecionado .conteudo {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    border-radius: 2px;
+}
+.agenteSelecionado .esquerda {
+    overflow: hidden;
+    flex: 1.2;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+.agenteSelecionado .img-fundo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    opacity: 0.35;
+}
+.agenteSelecionado .img-agente {
+    height: 115%;
+    z-index: 2;
+    position: relative;
+    bottom: -5%;
+}
+.agenteSelecionado .direita {
+    flex: 1;
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background: rgba(15, 25, 35, 0.6);
+    backdrop-filter: blur(4px);
+}
+.agenteSelecionado .topo {
+    text-align: right;
+    margin-bottom: 20px;
+}
+.agenteSelecionado .nome {
+    font-size: 70px;
+    margin: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+.agenteSelecionado .desc {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: right;
+    margin-bottom: 40px;
+    color: #ece8e1;
+}
+.agenteSelecionado .habilidades {
+    display: flex;
+    gap: 20px;
+    margin-top: auto;
+    align-items: flex-start;
+
+}
+.agenteSelecionado .icones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.agenteSelecionado .box-icone {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+}
+.agenteSelecionado .icone {
+    width: 35px;
+    height: 35px;
+}
+.agenteSelecionado .detalhe {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-left: 4px solid white;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.agenteSelecionado .nome-habilidade {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.agenteSelecionado .desc-habilidade {
+    font-size: 13px;
+    color: #ccc;
+    margin: 0;
+    line-height: 1.5;
+}
+@media (max-width: 680px) {
+    #agentes{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+    }
+}
+@media (max-width: 530px) {
+    #agentes{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 130px));
+    }
+}
+@media (max-width: 490px) {
+    .agenteSelecionado .conteudo {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .agenteSelecionado .esquerda {
+        display: none;
+    }
+
+    .agenteSelecionado .img-agente {
+        height: 130%;
+    }
+
+    .agenteSelecionado .direita {
+        padding: 30px;
+    }
+
+    .agenteSelecionado .nome {
+        font-size: 50px;
+        text-align: center;
+    }
+    #agentes{
+        grid-template-columns: repeat(auto-fit, minmax(50px, 110px));
+    }
+    .agenteSelecionado .desc {
+        text-align: left;
+    }
 }

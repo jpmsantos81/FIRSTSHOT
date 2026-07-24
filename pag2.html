@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pag2.css">
-    <link rel="shortcut icon" href="imgs/FaviconFirstShot.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/miniVava.png" type="image/x-icon">
     <title>Valorant</title>
 </head>
+
 <body>
 
     <header>
         <div>
-            <figure class="logo">
-                <img src="imgs/LogoFirstShot.png" class="logo" alt="logo FirstShot" />
+            <figure class="logo" id="logo">
+                <a href="index.html">
+                    <img src="imgs/LogoFirstShot.png" alt="logo FirstShot" />
+                </a>
+            </figure>
+            <figure class="logo" id="logoValorant">
+                <img src="imgs/logoValorant.png">
             </figure>
         </div>
     </header>
@@ -21,12 +28,75 @@
     <section id="banner" class="banner" style="background-image: url(imgs/BannerValorant.png);"></section>
 
     <main>
-        <section id="lista">
+        <section id="infosDoAgente" class="oculto">
+            <div class="agenteSelecionado">
+                <div class="conteudo">
 
+                    <div class="esquerda">
+                        <img src="https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/background.png"
+                            alt="Fundo" class="img-fundo" id="img-fundo">
+                        <img src="https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/fullportrait.png"
+                            alt="Cypher" class="img-agente" id="img-agente">
+                    </div>
+
+                    <div class="direita">
+                        <div class="topo">
+                            <h1 class="nome valorant" id="nome">Cypher</h1>
+                        </div>
+
+                        <p class="desc" id="desc">
+                            Cypher, um vendedor de informações do Marrocos, é uma verdadeira rede de vigilância de um
+                            homem só que fica de olho em cada movimento dos inimigos. Nenhum segredo está a salvo.
+                            Nenhuma manobra passa despercebida. Cypher está sempre vigiando.
+                        </p>
+
+                        <div class="habilidades">
+                            <div class="icones">
+                                <div class="box-icone">
+                                    <img src="https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability1/displayicon.png"
+                                        alt="Habilidade 1" class="icone" id="skill1">
+                                </div>
+                                <div class="box-icone">
+                                    <img src="https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ability2/displayicon.png"
+                                        alt="Habilidade 2" class="icone" id="skill2">
+                                </div>
+                                <div class="box-icone">
+                                    <img src="https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/grenade/displayicon.png"
+                                        alt="Habilidade 3" class="icone" id="skill3">
+                                </div>
+                                <div class="box-icone">
+                                    <img src="https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/abilities/ultimate/displayicon.png"
+                                        alt="Habilidade 4" class="icone" id="skill4">
+                                </div>
+                            </div>
+
+                            <div class="detalhe">
+                                <span class="nome-habilidade" id="nome-habilidade">Câmera de Vigilância</span>
+                                <p class="desc-habilidade" id="desc-habilidade">
+                                    EQUIPE uma Câmera de Vigilância. DISPARE para colocar a câmera no local-alvo. REPITA
+                                    a habilidade para controlar a visão da câmera. Enquanto controla a câmera, DISPARE
+                                    para lançar um dardo marcador.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
+        <section id="personagens">
+            <div class="container">
+                <h1 class="titulo">AGENTES</h1>
+                <div id="agentes"></div>
+            </div>
+        </section>
+
     </main>
+
+    <footer>Site desenvolvido por João Pedro</footer>
 
     <script src="scripts/script.js"></script>
     <script src="scripts/pag2.js"></script>
 </body>
+
 </html>
