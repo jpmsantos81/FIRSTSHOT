@@ -26,6 +26,8 @@
 body {
     color: white;
     background: #181818;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
 }
 
 header {
