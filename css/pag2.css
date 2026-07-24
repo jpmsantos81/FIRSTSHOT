@@ -35,7 +35,6 @@ header {
     top: 0;
     width: 100%;
     padding: 0.2em 0;
-    transition: 0.3s ease;
     background: linear-gradient(180deg, rgb(71, 15, 16) 0%, rgb(0, 0, 0) 100%);
     z-index: 1000;
 }
@@ -99,7 +98,6 @@ section{
 #agentes figure {
     aspect-ratio: 3/2.5;
     margin: 0 auto;
-    padding: 2em;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -134,7 +132,7 @@ footer {
     margin: 0px;
     font: 1em "Oswald", sans-serif;
 }
-.agenteSelecionado {
+.agenteSelecionado:not(.oculto) {
     position: relative;
     top: 0;
     left: 0;
@@ -144,6 +142,8 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 999;
+    /* scroll-margin-top: 8.32em; */
+    margin-bottom: 3em;
 }
 .agenteSelecionado .conteudo {
     width: 100%;
@@ -213,19 +213,35 @@ footer {
     flex-direction: column;
     gap: 12px;
 }
+
 .agenteSelecionado .box-icone {
     width: 50px;
     height: 50px;
     cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s ease-in-out;
     background: rgba(255, 255, 255, 0.05);
+}
+.agenteSelecionado .box-icone:hover{
+    transform: translateY(-4px);
+    scale: 1.02;
+}
+.agenteSelecionado .box-icone.ativo{
+    transform: translateY(-5px);
+    scale: 1.06;
+    background: rgba(255, 255, 255, 0.697);
+    border: 2px solid rgb(7, 7, 7);
+}
+.ativo .icone{
+    filter: invert(1);
 }
 .agenteSelecionado .icone {
     width: 35px;
     height: 35px;
+    transition: transform .2s ease, .2s ease;
 }
 .agenteSelecionado .detalhe {
     flex: 1;
@@ -289,5 +305,10 @@ footer {
     }
     .agenteSelecionado .desc {
         text-align: left;
+    }
+}
+@media (max-width: 410px) {
+    #agentes{
+        grid-template-columns: repeat(auto-fit, minmax(90px, 95px));
     }
 }
