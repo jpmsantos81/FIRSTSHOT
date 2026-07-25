@@ -182,6 +182,7 @@ footer {
     flex-direction: column;
     background: rgba(15, 25, 35, 0.6);
     backdrop-filter: blur(4px);
+    overflow-y: auto;
 }
 .agenteSelecionado .topo {
     text-align: right;
