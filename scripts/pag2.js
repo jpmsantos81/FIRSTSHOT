@@ -1,6 +1,6 @@
 carregar();
 
-//usa a api do valorant e coloca na tela
+//usa a api do valorant e coloca as coisas na tela
 async function carregar() {
     const json = await fetch("https://valorant-api.com/v1/agents?language=pt-BR&isPlayableCharacter=true");
     const personagens = (await json.json()).data;
@@ -103,5 +103,24 @@ function mostrarHabilidades(h, box) {
     document.querySelectorAll(".box-icone").forEach(b => {
         if (b === box) b.classList.add('ativo');
         else b.classList.remove('ativo');
+    })
+}
+carregarArmas()
+//carrega as armas e coloca na tela
+async function carregarArmas() {
+    const json = await fetch("https://valorant-api.com/v1/weapons/?language=pt-BR");
+    const armas = (await json.json()).data;
+
+    const lista = document.getElementById("armas");
+
+    armas.forEach(a => {
+        const card = document.createElement("div");
+        const figure = document.createElement("figure");
+        
+        card.className = "card";
+        figure.style.backgroundImage = `url(${a.displayIcon}`;
+
+        card.appendChild(figure);
+        lista.appendChild(card);
     })
 }
