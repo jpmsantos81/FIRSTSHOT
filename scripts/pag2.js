@@ -118,7 +118,7 @@ async function carregarArmas() {
         const figure = document.createElement("figure");
         
         card.className = "card";
-        figure.style.backgroundImage = `url(${a.displayIcon}`;
+        figure.style.backgroundImage = `url(${a.displayIcon})`;
 
         card.appendChild(figure);
         lista.appendChild(card);
