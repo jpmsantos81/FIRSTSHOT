@@ -1,0 +1,822 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080808;
+    color: #ffffff;
+
+    /* Evita rolagem horizontal */
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+
+    background: #090909;
+
+    border-bottom: 1px solid #222;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.navbar .logo {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .logo img {
+    display: block;
+
+    width: 275px;
+    height: auto;
+}
+
+
+/* LINKS */
+
+.navbar nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 45px;
+}
+
+.navbar nav a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #e32626;
+}
+
+#menuBtn {
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 9%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1b1b1b,
+            #090909 50%,
+            #310909
+        );
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -150px;
+    bottom: -200px;
+
+    background: #b31313;
+
+    filter: blur(150px);
+
+    opacity: 0.25;
+}
+
+.hero-content {
+    max-width: 700px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.subtitle {
+    color: #e32626;
+
+    font-size: 13px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(60px, 9vw, 120px);
+
+    line-height: 0.9;
+
+    font-weight: 900;
+
+    letter-spacing: -5px;
+}
+
+.hero h1 span {
+    color: #e32626;
+}
+
+.hero p {
+    max-width: 570px;
+
+    margin-top: 30px;
+
+    color: #bdbdbd;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding: 15px 35px;
+
+    color: white;
+
+    background: #d91f1f;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #ffffff;
+
+    color: #000000;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section {
+    padding: 100px 9%;
+
+    border-bottom: 1px solid #181818;
+
+    /* IMPORTANTE:
+       as seções ficam visíveis */
+    opacity: 1;
+    transform: none;
+}
+
+.section-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 55px;
+}
+
+.section-title span {
+    color: #e32626;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 36px;
+
+    letter-spacing: 2px;
+}
+
+.section-intro {
+    max-width: 700px;
+
+    margin-top: -25px;
+    margin-bottom: 45px;
+
+    color: #999;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.about {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.about-text p {
+    color: #aaa;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+.about-card {
+    padding: 45px;
+
+    min-height: 300px;
+
+    border: 1px solid #292929;
+
+    background:
+        linear-gradient(
+            145deg,
+            #171717,
+            #090909
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.about-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 5px;
+
+    height: 100%;
+
+    left: 0;
+    top: 0;
+
+    background: #e32626;
+}
+
+.card-number {
+    font-size: 70px;
+
+    font-weight: 900;
+
+    color: #252525;
+}
+
+.about-card h3 {
+    margin-top: 20px;
+
+    font-size: 25px;
+}
+
+.about-card p {
+    margin-top: 15px;
+
+    color: #999;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HISTÓRIA
+========================= */
+
+.history-section {
+    background: #0b0b0b;
+}
+
+.timeline {
+    max-width: 900px;
+
+    margin: auto;
+
+    border-left: 2px solid #292929;
+
+    padding-left: 40px;
+}
+
+.timeline-item {
+    position: relative;
+
+    margin-bottom: 55px;
+}
+
+.timeline-item::before {
+    content: "";
+
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: #e32626;
+
+    left: -47px;
+    top: 5px;
+
+    box-shadow: 0 0 20px rgba(227, 38, 38, 0.6);
+}
+
+.year {
+    color: #e32626;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+.timeline-content p {
+    color: #999;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   MODOS
+========================= */
+
+.mode-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.mode-card {
+    min-height: 300px;
+
+    padding: 30px;
+
+    background: #101010;
+
+    border: 1px solid #222;
+
+    transition: 0.3s;
+}
+
+.mode-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #e32626;
+
+    background: #151515;
+}
+
+.mode-icon {
+    color: #e32626;
+
+    font-weight: bold;
+
+    margin-bottom: 70px;
+}
+
+.mode-card h3 {
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+.mode-card p {
+    color: #888;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MAPAS E ARMAS
+========================= */
+
+.arsenal-section {
+    padding: 100px 9%;
+
+    background: #0b0b0b;
+
+    border-bottom: 1px solid #181818;
+}
+
+.gallery-title {
+    margin-top: 40px;
+
+    margin-bottom: 25px;
+
+    font-size: 20px;
+
+    letter-spacing: 2px;
+}
+
+.weapons-title {
+    margin-top: 70px;
+}
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.gallery-card {
+    position: relative;
+
+    height: 300px;
+
+    overflow: hidden;
+
+    background: #111;
+
+    border: 1px solid #292929;
+
+    transition: 0.3s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #e32626;
+}
+
+.gallery-card img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.5s;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.06);
+}
+
+.gallery-info {
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 100%;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.95)
+        );
+}
+
+.gallery-info h3 {
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+.gallery-info p {
+    color: #aaa;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   ESCOLHA SEU ESTILO
+========================= */
+
+.styles-section {
+    text-align: center;
+}
+
+.styles-section .section-title {
+    justify-content: center;
+}
+
+.style-container {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.style-button {
+    padding: 15px 25px;
+
+    background: #111;
+
+    color: #aaa;
+
+    border: 1px solid #333;
+
+    cursor: pointer;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.style-button:hover,
+.style-button.active {
+    background: #e32626;
+
+    color: white;
+
+    border-color: #e32626;
+}
+
+.style-description {
+    max-width: 700px;
+
+    margin: 40px auto 0;
+
+    padding: 35px;
+
+    background: #111;
+
+    border: 1px solid #252525;
+}
+
+.style-description h3 {
+    margin-bottom: 15px;
+}
+
+.style-description p {
+    color: #999;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CURIOSIDADES
+========================= */
+
+.facts {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    border: 1px solid #252525;
+}
+
+.fact {
+    padding: 50px 25px;
+
+    text-align: center;
+
+    border-right: 1px solid #252525;
+}
+
+.fact:last-child {
+    border-right: none;
+}
+
+.fact strong {
+    display: block;
+
+    color: #e32626;
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.fact p {
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 60px 9%;
+
+    text-align: center;
+
+    background: #050505;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: #666;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+    #menuBtn {
+        display: block;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .mode-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .facts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fact {
+        border-bottom: 1px solid #252525;
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 550px;
+
+        padding: 0 7%;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .section {
+        padding: 70px 7%;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .mode-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .facts {
+        grid-template-columns: 1fr;
+    }
+
+    .fact {
+        border-right: none;
+    }
+
+    .timeline {
+        padding-left: 25px;
+    }
+
+    .timeline-item::before {
+        left: -32px;
+    }
+
+
+    /* MAPAS E ARMAS */
+
+    .arsenal-section {
+        padding: 70px 7%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-card {
+        height: 280px;
+    }
+
+    .gallery-info {
+        padding: 25px;
+    }
+
+    .gallery-info h3 {
+        font-size: 22px;
+    }
+
+}
