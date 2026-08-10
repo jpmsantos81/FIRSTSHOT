@@ -153,113 +153,113 @@ const herois = [
 {
     nome: "Kiriko",
     classe: "Suporte",
-    imagem: "imgs/herois/kiriko.png"
+    imagem: "imgs/kirirko.png"
 },
 {
     nome: "Lifeweaver",
     classe: "Suporte",
-    imagem: "imgs/herois/lifeweaver.png"
+    imagem: "imgs/lifeweaver.png"
 },
 {
     nome: "Lúcio",
     classe: "Suporte",
-    imagem: "imgs/herois/lucio.png"
+    imagem: "imgs/lucio.png"
 },
 {
     nome: "Mercy",
     classe: "Suporte",
-    imagem: "imgs/herois/mercy.png"
+    imagem: "imgs/mercy.png"
 },
 {
     nome: "Mizuki",
     classe: "Suporte",
-    imagem: "imgs/herois/mizuki.png"
+    imagem: "imgs/mizuki.png"
 },
 {
     nome: "Moira",
     classe: "Suporte",
-    imagem: "imgs/herois/moira.png"
+    imagem: "imgs/moira.png"
 },
 {
     nome: "Wuyang",
     classe: "Suporte",
-    imagem: "imgs/herois/wuyang.png"
+    imagem: "imgs/wuyang.png"
 },
 {
     nome: "Zenyatta",
     classe: "Suporte",
-    imagem: "imgs/herois/zenyatta.png"
+    imagem: "imgs/zenyattta.png"
 },
 
 {
     nome: "D.Va",
     classe: "Tanque",
-    imagem: "imgs/herois/dva.png"
+    imagem: "imgs/dva.png"
 },
 {
     nome: "Domina",
     classe: "Tanque",
-    imagem: "imgs/herois/domina.png"
+    imagem: "imgs/domina.png"
 },
 {
     nome: "Doomfist",
     classe: "Tanque",
-    imagem: "imgs/herois/doomfist.png"
+    imagem: "imgs/doomfist.png"
 },
 {
     nome: "Hazard",
     classe: "Tanque",
-    imagem: "imgs/herois/hazard.png"
+    imagem: "imgs/hazard.png"
 },
 {
     nome: "Junker Queen",
     classe: "Tanque",
-    imagem: "imgs/herois/junkerqueen.png"
+    imagem: "imgs/junkerqueen.png"
 },
 {
     nome: "Mauga",
     classe: "Tanque",
-    imagem: "imgs/herois/mauga.png"
+    imagem: "imgs/mauga.png"
 },
 {
     nome: "Orisa",
     classe: "Tanque",
-    imagem: "imgs/herois/orisa.png"
+    imagem: "imgs/orisa.png"
 },
 {
     nome: "Ramattra",
     classe: "Tanque",
-    imagem: "imgs/herois/ramattra.png"
+    imagem: "imgs/ramattra.png"
 },
 {
     nome: "Reinhardt",
     classe: "Tanque",
-    imagem: "imgs/herois/reinhardt.png"
+    imagem: "imgs/reindhardt.png"
 },
 {
     nome: "Roadhog",
     classe: "Tanque",
-    imagem: "imgs/herois/roadhog.png"
+    imagem: "imgs/roadhog.avif"
 },
 {
     nome: "Sigma",
     classe: "Tanque",
-    imagem: "imgs/herois/sigma.png"
+    imagem: "imgs/sigma.png"
 },
 {
     nome: "Winston",
     classe: "Tanque",
-    imagem: "imgs/herois/winston.png"
+    imagem: "imgs/winston.png"
 },
 {
     nome: "Wrecking Ball",
     classe: "Tanque",
-    imagem: "imgs/herois/wreckingball.png"
+    imagem: "imgs/wrecking-ball-batalha.avif"
 },
 {
     nome: "Zarya",
     classe: "Tanque",
-    imagem: "imgs/herois/zarya.png"
+    imagem: "imgs/zarya.png"
 }
 ];
 
