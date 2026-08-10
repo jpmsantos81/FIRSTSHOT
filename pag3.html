@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/cs.css">
+    <link rel="icon" href="imgs/logocs.png" type="image/x-icon">
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <figure class="logo" id="logo">
+                <a href="index.html">
+                    <img src="imgs/LogoFirstShot.png" alt="logo FirstShot" />
+                </a>
+            </figure>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#historia">História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jogar">Como Jogar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jogadores">Jogadores Importantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#curiosidades">Curiosidades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner -->
+    <header id="inicio" class="banner">
+        <div class="container">
+            <h1>COUNTER-STRIKE</h1>
+            <p>
+                O jogo FPS competitivo mais famoso da história.
+            </p>
+            <a href="#historia" class="btn btn-warning btn-lg">
+                Conheça a História
+            </a>
+        </div>
+    </header>
+
+    <!-- historia -->
+    <section id="historia" class="container py-5">
+        <h2 class="text-center text-light mb-5">História do Counter-Strike</h2>
+
+        <div class="timeline">
+            <div class="card p-4 mb-4 shadow">
+                <h4>1999 - O Início</h4>
+                <p>
+                    Counter-Strike nasceu como um MOD do jogo Half-Life,
+                    criado por Minh Le e Jess Cliffe.
+                </p>
+            </div>
+
+            <div class="card p-4 mb-4 shadow">
+                <h4>2000 - Counter Strike 1.0</h4>
+                <p>
+                    A Valve comprou o projeto e lançou oficialmente o jogo.
+                </p>
+            </div>
+
+            <div class="card p-4 mb-4 shadow">
+                <h4>2003 - CS 1.6</h4>
+                <p>
+                    Tornou-se um dos maiores jogos competitivos do mundo.
+                </p>
+            </div>
+
+            <div class="card p-4 mb-4 shadow">
+                <h4>2004 - Counter Strike Source</h4>
+                <p>
+                    Nova engine gráfica baseada na Source Engine.
+                </p>
+            </div>
+
+            <div class="card p-4 shadow">
+                <h4>2012 - Counter Strike Global Offensive</h4>
+                <p>
+                    Revolucionou o cenário competitivo e permaneceu por mais de
+                    10 anos como principal FPS.
+                </p>
+            </div>
+            
+            <div class="card p-4 mt-4 shadow">
+                <h4>2023 - Counter Strike 2</h4>
+                <p>
+                    Atualização completa utilizando a Source 2 Engine,
+                    gráficos modernos e novas mecânicas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- versoes -->
+    <section id="versoes" class="versoes-section py-5">
+        <div class="container">
+            <div class="section-heading text-center mb-4">
+                <span class="eyebrow">Linha evolutiva</span>
+                <h2 class="text-light">Versões do Jogo</h2>
+            </div>
+
+            <div id="carouselVersoes" class="carousel slide version-carousel" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <article class="version-card">
+                                    <span class="version-year">1999</span>
+                                    <h3>Counter-Strike</h3>
+                                    <p>
+                                        O MOD de Half-Life que nasceu para ser competitivo e virou base da franquia.
+                                    </p>
+                                </article>
+                            </div>
+
+                            <div class="col-md-6">
+                                <article class="version-card">
+                                    <span class="version-year">2000</span>
+                                    <h3>CS 1.0</h3>
+                                    <p>
+                                        A Valve oficializou o projeto e deu início a uma nova era do FPS competitivo.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <article class="version-card">
+                                    <span class="version-year">2003</span>
+                                    <h3>CS 1.6</h3>
+                                    <p>
+                                        O clássico que consolidou o cenário competitivo e se tornou referência mundial.
+                                    </p>
+                                </article>
+                            </div>
+
+                            <div class="col-md-6">
+                                <article class="version-card">
+                                    <span class="version-year">2004</span>
+                                    <h3>Counter-Strike: Source</h3>
+                                    <p>
+                                        A engine Source trouxe melhorias visuais e renovou a experiência do jogo.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <article class="version-card">
+                                    <span class="version-year">2012</span>
+                                    <h3>CS:GO</h3>
+                                    <p>
+                                        A versão que elevou o esporte eletrônico a um patamar gigantesco no mundo inteiro.
+                                    </p>
+                                </article>
+                            </div>
+
+                            <div class="col-md-6">
+                                <article class="version-card">
+                                    <span class="version-year">2023</span>
+                                    <h3>CS2</h3>
+                                    <p>
+                                        A nova geração com Source 2, gráficos modernos e uma base competitiva mais refinada.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselVersoes" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselVersoes" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como jogar -->
+    <section id="jogar" class="container py-5">
+        <div class="section-heading text-center mb-4">
+            <h2 class="text-light">Como Jogar</h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="jogar-card">
+                    <h4>Objetivo</h4>
+                    <p>
+                        Counter-Strike é um FPS onde Terroristas devem plantar a bomba e enfrentam Contra-Terroristas.
+                    </p>
+                    <ul>
+                        <li>Plantar ou desarmar a bomba.</li>
+                        <li>Eliminar o time adversário.</li>
+                        <li>Administrar economia.</li>
+                        <li>Comprar armas e equipamentos.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="jogar-card">
+                    <h4>Dicas</h4>
+                    <p>
+                        Counter-Strike pode até parecer simples, mas exige muitas técnicas e conhecimento para se tornar bom no jogo.
+                    </p>
+                    <ul>
+                        <li>Treine sua mira.</li>
+                        <li>Aprenda os mapas.</li>
+                        <li>Jogue em equipe.</li>
+                        <li>Use granadas corretamente.</li>
+                        <li>Comunique informações pelo microfone.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jogadores -->
+    <section id="jogadores" class="text-center py-5">
+        <div class="container">
+            <div class="section-heading text-center mb-4">
+                <span class="eyebrow">Lendas</span>
+                <h2 class="text-light">Jogadores Importantes</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3">
+                    <button type="button" class="card player-card shadow player-trigger" data-bs-toggle="modal" data-bs-target="#modalJogador"
+                        data-name="FalleN"
+                        data-image="https://img-cdn.hltv.org/gallerypicture/4UUu986Dsqps1ZNPr_dIrb.jpg?ixlib=java-2.1.0&w=1200&s=2762da40d1d87801ecb62ba2e7f71368"
+                        data-history="Gabriel Toledo,Conhecido como FalleN é um dos nomes mais importantes do Counter-Strike brasileiro. Ele conquistou títulos mundiais e ajudou a elevar o país ao topo do cenário competitivo, sendo conhecido pela liderança, visão de jogo e impacto histórico no esports.">
+                        <div class="card-body">
+                            <h4>FalleN</h4>
+                            <p>Considerado o maior jogador de CS brasileiro.</p>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <button type="button" class="card player-card shadow player-trigger" data-bs-toggle="modal" data-bs-target="#modalJogador"
+                        data-name="Coldzera"
+                        data-image="https://s2.glbimg.com/90_iqeq2dnIQcV6p1CzZdGR3JQw=/0x0:1200x800/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2018/T/B/Ay48ewSgy4odlZ9RxtiQ/cold.jpg"
+                        data-history="Marcelo Dantas, conhecido como Coldzera, é um jogador profissional brasileiro de Counter-Strike, bicampeão mundial e eleito o melhor jogador do mundo de CS:GO em 2016 e 2017 pelo portal HLTV. Ele é amplamente reconhecido como um dos maiores atletas de esportes eletrônicos da história do país.">
+                        <div class="card-body">
+                            <h4>Coldzera</h4>
+                            <p>Bicampeão de melhor jogador do mundo.</p>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <button type="button" class="card player-card shadow player-trigger" data-bs-toggle="modal" data-bs-target="#modalJogador"
+                        data-name="s1mple"
+                        data-image="https://s2-ge.glbimg.com/YyKCE-3YvSjL9h6-Hvn9faQDMl4=/0x0:2500x1667/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/d/K/Mo911yQkesv2wl5TbEYw/s1mple-ouvido-navi-furia-iem-major-rio-2022.jpg"
+                        data-history="Oleksandr Olegovich Kostyliev, mais conhecido como s1mple, é um jogador ucraniano de Counter-Strike: 2. Atualmente joga pela BC.Game. Ele é considerado como um dos melhores jogadores de CS2 do mundo, conhecido por sua habilidade excepcional, precisão e consistência em partidas de alto nível.">
+                        <div class="card-body">
+                            <h4>s1mple</h4>
+                            <p>Considerado um dos maiores jogadores da história.</p>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <button type="button" class="card player-card shadow player-trigger" data-bs-toggle="modal" data-bs-target="#modalJogador"
+                        data-name="ZywOo"
+                        data-image="https://img-cdn.hltv.org/gallerypicture/0FPu5ghPskDsty4125d6m3.jpg?ixlib=java-2.1.0&w=1200&s=e6ef6741b1df0fe44e60c8518e3df6ef"
+                        data-history="Mathieu Herbaut, ZywOo é um jogador profissional francês de Counter-Strike (CS:GO e CS2) que atua pela Team Vitality. Nascido em 9 de novembro de 2000, ele é amplamente considerado um dos maiores atletas da história do esporte eletrônico, tendo sido eleito o melhor jogador do mundo pela HLTV em 2019, 2020, 2023 e 2025.">
+                        <div class="card-body">
+                            <h4>ZywOo</h4>
+                            <p>Um dos maiores talentos da atualidade.</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curiosidades -->
+    <section id="curiosidades" class="container py-5">
+        <h2 class="text-center text-light mb-5">Curiosidades</h2>
+
+        <div class="accordion" id="faq">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#c1">
+                        O mapa Dust2 foi criado em 2001.
+                    </button>
+                </h2>
+
+                <div id="c1" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        É o mapa mais famoso do FPS.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#c2">
+                        Mais de 30 milhões de jogadores.
+                    </button>
+                </h2>
+
+                <div id="c2" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Counter Strike é um dos jogos mais jogados da Steam.
+                    </div>
+                </div>
+
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#c3">
+                        Cenário competitivo gigantesco.
+                    </button>
+                </h2>
+                
+                <div id="c3" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Campeonatos distribuem milhões de dólares em premiações.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button id="topo" class="btn btn-warning" aria-label="Voltar ao topo">↑</button>
+
+    <div class="modal fade" id="modalJogador" tabindex="-1" aria-labelledby="modalJogadorTitulo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content player-modal">
+                <div class="modal-header border-0 justify-content-end">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-5 text-center">
+                            <img id="modalJogadorFoto" class="img-fluid player-modal-image" src="" alt="Foto do jogador">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="player-modal-name" id="modalJogadorTitulo">Jogador</h3>
+                            <p id="modalJogadorTexto" class="player-modal-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Desenvolvido por Matheus Torres Betega - 2026
+        </p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/cs.js"></script>
+</html>
