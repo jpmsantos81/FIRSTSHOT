@@ -1,12 +1,14 @@
 # FIRSTSHOT
+<details>
+ <summary>Counter Strike</summary>
 
 # Site de Counter-Strike
 
-#  Estrutura
+##  Estrutura
 
 O site foi organizado em seções para facilitar a navegação do usuário.
 
-## Navbar
+### Navbar
 
 * Barra de navegação fixa no topo da página.
 * Logo do Counter-Strike.
@@ -18,25 +20,25 @@ O site foi organizado em seções para facilitar a navegação do usuário.
   * Jogadores Importantes
   * Curiosidades
 
-## Banner Principal
+### Banner Principal
 
 * Título de destaque.
 * Breve descrição sobre o jogo.
 * Botão de ação para incentivar a navegação.
 
-## História do Jogo
+### História do Jogo
 
 Apresenta um resumo da criação e evolução do Counter-Strike desde seu lançamento até os dias atuais.
 
-## Versões do Jogo
+### Versões do Jogo
 
 Exibe as principais versões do Counter-Strike utilizando um **Carousel** do Bootstrap, permitindo navegar entre elas de forma dinâmica.
 
-## Como Jogar
+### Como Jogar
 
 Explica os conceitos básicos da jogabilidade, objetivos das equipes e principais mecânicas do jogo.
 
-## Jogadores Importantes
+### Jogadores Importantes
 
 Mostra alguns dos jogadores profissionais mais conhecidos da história do Counter-Strike. Cada jogador pode ser visualizado em um **Modal**, contendo:
 
@@ -45,17 +47,17 @@ Mostra alguns dos jogadores profissionais mais conhecidos da história do Counte
 * Histórico;
 * Principais conquistas.
 
-## Curiosidades
+### Curiosidades
 
 Utiliza um componente **Accordion** para apresentar fatos interessantes sobre o jogo de forma organizada.
 
-## Rodapé
+### Rodapé
 
 Contém as informações finais do site.
 
 ---
 
-# 🎨 Estilização
+## 🎨 Estilização
 
 Para proporcionar uma aparência moderna e alinhada ao tema do jogo, foram aplicadas as seguintes características:
 
@@ -70,7 +72,7 @@ Para proporcionar uma aparência moderna e alinhada ao tema do jogo, foram aplic
 
 ---
 
-# 🛠 Tecnologias Utilizadas
+## 🛠 Tecnologias Utilizadas
 
 * HTML5
 * CSS3
@@ -79,7 +81,7 @@ Para proporcionar uma aparência moderna e alinhada ao tema do jogo, foram aplic
 
 ---
 
-# 🔤 Fontes Utilizadas
+## 🔤 Fontes Utilizadas
 
 As seguintes fontes foram importadas pelo Google Fonts:
 
@@ -88,7 +90,7 @@ As seguintes fontes foram importadas pelo Google Fonts:
 
 ---
 
-# ⚙️ Funcionalidades
+## ⚙️ Funcionalidades
 
 O projeto possui diversos componentes interativos, entre eles:
 
@@ -100,12 +102,14 @@ O projeto possui diversos componentes interativos, entre eles:
 
 ---
 
-# 📱 Responsividade
+## 📱 Responsividade
 
 O site foi desenvolvido utilizando recursos do Bootstrap 5 para garantir uma boa experiência em diferentes dispositivos, mantendo organização, legibilidade e facilidade de navegação.
 
 ---
 
-# 🎯 Objetivo do Projeto
+## 🎯 Objetivo do Projeto
 
 Desenvolver um site informativo sobre o universo de Counter-Strike utilizando as principais tecnologias de desenvolvimento web, aplicando conceitos de HTML, CSS, JavaScript e Bootstrap na construção de uma interface moderna, organizada, interativa e responsiva.
+
+</details>
