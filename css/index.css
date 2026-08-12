@@ -78,6 +78,12 @@ header .container {
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
 }
+.secao.apareceu *:not(.imagem):not(img){
+    animation: aparecer 1.8s ease forwards;
+}
+.secao:not(.valorant):not(.cs).apareceu .imagem{
+    animation: aparecer 1s ease forwards;
+}
 .imagem {
     width: 100%;
     height: 100%;
@@ -170,4 +176,14 @@ footer{
         padding: 40px 25px;
     }
 
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

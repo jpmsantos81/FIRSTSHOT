@@ -24,3 +24,18 @@ window.addEventListener("wheel", scrollDoUser);
 window.addEventListener("touchmove", scrollDoUser);
 window.addEventListener("keydown", scrollDoUser);
 window.addEventListener("mousedown", scrollDoUser);
+
+
+//ativa a animação de aparecer quando o item aparece na tela a primeira vez
+const elementos = document.querySelectorAll(".secao");
+
+const observer = new IntersectionObserver(entradas => {
+    entradas.forEach(entrada => {
+        if (entrada.isIntersecting)
+            entrada.target.classList.add("apareceu");
+    });
+});
+
+elementos.forEach(elemento => {
+    observer.observe(elemento);
+});
